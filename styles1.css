@@ -1,5 +1,18 @@
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
 header {
     text-align:center;
     display:block;
     border:2px dotted black;
+}
+
+div > img {
+    display:block;
+    margin:5rem;
+    margin-top:15rem;
+    width:25%;
+    border: 2px solid black;
 }
