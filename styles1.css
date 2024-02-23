@@ -9,8 +9,7 @@ header {
     border:2px dotted black;
 }
 
-div > img {
-    display:block;
+.container-1  img {
     margin:5rem;
     margin-top:15rem;
     width:25%;
