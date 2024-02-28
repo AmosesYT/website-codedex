@@ -17,13 +17,13 @@ header {
     flex-direction:column
 }
 
-.image-link:hover {
-    background-color: black;
+.image-link {
+    margin:45px;
+    border-radius:25px;
 }
 
 
 #pic-1,#pic-2 {
-    margin:45px;
     border-radius:25px;
     border: 2px solid black;
     height:100px;
