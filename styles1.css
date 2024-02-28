@@ -1,17 +1,51 @@
-a {
-    text-decoration:none;
-    color:inherit;
+body {
+    background-color:grey;
 }
 
 header {
-    text-align:center;
-    display:block;
     border:2px dotted black;
+    text-align:center;
+    padding:40px;
 }
 
-.container-1  img {
-    margin:5rem;
-    margin-top:15rem;
-    width:25%;
+.container-1{
+    display: flex;
+    border-radius:25px;
+    border: 4px solid blue;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column
+}
+
+.image-link:hover {
+    background-color: black;
+}
+
+
+#pic-1,#pic-2 {
+    margin:45px;
+    border-radius:25px;
     border: 2px solid black;
+    height:100px;
+    width:300px;
+}
+
+.about-me{ 
+    border-radius:25px;
+    width:200px;
+    height:300px;
+    padding:15px;
+    text-align:center;
+    border: 2px solid black;
+    float:right;
+    margin-top:-27%;
+    position:sticky;
+}
+
+#pic-2 {
+   object-fit:contain;
+}
+
+footer {
+    clear:both;
 }

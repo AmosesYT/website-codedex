@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trevor's Pizzeria</title>
+    <style>
+        #header-img {
+            margin:auto;
+            display:block;
+            width:50%;
+        }
+
+        header {
+            text-align:center;
+        }
+
+        hr {
+            border: 1px solid black;
+            width:80%;
+            margin-top:10px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            color:black;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        #menu-pasta {
+            width: 60%;
+        }
+
+        #menu-CNR{
+            width:40%;
+        }
+
+        #menu-wings{
+            width:60%;
+        }
+
+        #menu-pizza{
+            width:60%;
+        }
+
+        #menu-sides{
+            width:70%;
+        }
+        #menu-apps{
+            width:60%;
+        }
+        article p {
+            font-size: 20px;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #0e3768;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        article {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        #placeOrder{
+            text-align:center;
+            width:50%;
+            margin:0 auto;
+        }
+        #placeOrder label{
+            display:block;
+            margin-left:10px;
+        }
+
+        #placeOrder label:not([type="checkbox"]) {
+            margin-bottom:10px;
+        }
+
+        #placeOrder textarea{
+            width:100%;
+            box-sizing: border-box;
+            padding:5px;
+        }
+
+        #placeOrder input{
+            box-sizing: border-box;
+            padding:3px;
+        }
+
+    
+        form label{
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header-img">
+        <img id="header-img" alt="TP-Logo" src="https://i.imgur.com/vfORxev.png">
+        <h1>Trevor's Pizzeria's Menu</h1>
+        <nav>
+            <a href="#menu-GFP">Menu</a>
+            <a href="#placeOrder">Order</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <article>
+                <img id="menu-pasta" src="https://heatherchristo.com/wp-content/uploads/2015/01/Creamy-Sun-dried-tomato-Pasta-with-Spicy-Chicken-Sausage.jpg"/>
+                <h3>Gluten Free Pasta - $12.99</h3>
+                <p>Our in house recreation of the famous pasta dish: "Tagliatelle bolognese"</p>
+            </article>
+            <article>
+                <img id="menu-CNR" src="https://www.eatingwell.com/thmb/O0EjBleCjGHHmQpILjUoL7KRCyY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7032137-8a6db525972c4aeabdac3aff103213a0.jpg"/>
+                <h3>Protein Packed Chicken and rice - $23.99</h3>
+                <p>Chicken and Rice topped with broccoli and sprinkled in sesame seeds, a quick and easy meal for lots of protein!</p>
+            </article>
+            <article>
+                <img id="menu-pizza" src="https://prodcufundraisingstorage.blob.core.windows.net/pictures/0067817_gluten-free-pepperoni-combo-kit_500.jpeg"/>
+                <h3>Gluten Free Pizza - $12.99</h3>
+                <p>A Deliciously Furnace Baked Cauliflower Pizza topped with pepperoni and serves up to a family of 8!</p>
+            </article>
+
+            <article>
+                <img id="menu-wings" src="https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-133967000000000000/restaurant_list_image_1671457618.jpg"/>
+                <h3>BBQ Wings - $15.49</h3>
+                <p> 12pc Wings cooked to perfection drenched in our homemade barbequeue sauce!</p>
+            </article>
+            <article>
+                <img id="menu-apps" src="https://www.allrecipes.com/thmb/BeV2hKihyqT4sQBI6h2fYp2KzuU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23596-fried-mozzarella-cheese-sticks-DDMFS-4x3-842a0eaebf6b435a8d3a8b04325e13eb.jpg"/>
+                <h3>Appetizers</h3>
+                <p>Our homemade mozzarella cheese sticks are to die for, cooked to perfection complimented by our homemade marinara sauce.</p>
+            </article>
+            <article>
+                <img id="menu-sides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Sous_vide_mashed_potatoes.jpg/640px-Sous_vide_mashed_potatoes.jpg"/>
+                <h3>Sides</h3>
+                <p>For sides we have Garlic Butter Mash Potatoes, comes with a side of gravy!</p>
+            </article>
+
+        </section>
+        <section id="placeOrder">
+            <h2>Place Your Order Here :)</h2>
+            <form>
+                <label id="item">Gluten Free Pasta: <input type="number" min="0" placeholder="Enter quantity" /></label>     
+                <br><br>
+                <label id="item">Chicken and Rice: <input type="number" min="0" placeholder="Enter quantity" /></label>      
+                <br><br>
+                <label id="item">Gluten Free Pizza: <input type="number" min="0" placeholder="Enter quantity"/></label>
+                <br><br>
+                <label id="item">BBQ Wings: <input type="number" min="0" placeholder="Enter quantity"/></label>
+                <br><br>
+                <label id="item">Appetizers: <input type="number" min="0" placeholder="Enter quantity"/></label>
+                <br><br>
+                <label> sides? (check if yes)<input type="checkbox"/></label>
+                <label><input type="radio" name="paymentMethod" value="credit"/>Credit Card</label>
+                <label><input type="radio" name="paymentMethod" value="cash"/>Cash</label>
+                <input type="submit" value="Go To Checkout"/>
+                <br>
+                <br>
+                <label><textarea id="data-entry" rows="7" cols="42"  placeholder="Special Requests/Instructions."></textarea></label>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by Amoses</p>
+    </footer>
+</body>
+</html>
