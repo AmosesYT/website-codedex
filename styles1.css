@@ -6,7 +6,7 @@ body {
 header {
     border-bottom:4px solid black;
     text-align:center;
-    padding:40px;
+    padding:10px;
 }
 
 .container-1{
@@ -72,4 +72,11 @@ header {
 
 footer {
     clear:both;
+    height:auto;
+    width:auto;
+    border:2px solid blue;
+}
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
