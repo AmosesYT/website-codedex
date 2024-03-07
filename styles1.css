@@ -59,8 +59,7 @@ header {
     height:50px;
     width:200px;
     position:sticky;
-    margin-top:-23%;
-    margin-left:35%;
+    margin:0 auto;
 }
 
 .about-me h2 {
@@ -71,10 +70,11 @@ header {
 }
 
 footer {
-    clear:both;
-    height:auto;
-    width:auto;
-    border:2px solid blue;
+    background-color:white;
+    opacity:60%;
+    margin-top:50%;
+    height:50%;
+    width:100%;
 }
 
 h1 {
