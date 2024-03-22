@@ -90,6 +90,7 @@ footer {
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
     margin-bottom:15px;
     width:32%;
     height:26%;
@@ -127,15 +128,6 @@ footer {
     vertical-align:middle;
 }
 
-.footer-kid-child-1 {
-    text-align:center;
-    margin-top:15px;
-}
-
-.footer-kid-child-1 h1 {
-    margin-left:40px;
-}
-
 .footer-kid-1 div {
     margin-right:25px;
 }
@@ -168,6 +160,13 @@ h1 {
 .discord-icon-1,.discord-icon-2,.discord-icon-3 {
     width:50px;
     height:50px;
+}
+
+#fk1-h1 {
+    margin-top:-25px;
+    padding:5px 15px 5px 15px;
+    border-style:double;
+    border-color:black;
 }
 
 #fk2-h1{
