@@ -86,17 +86,58 @@ footer {
     height:100%;
 }
 
-.footer-kid-1,.footer-kid-2,.footer-kid-3 {
+.footer-kid-1,.footer-kid-3 {
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
     margin-bottom:15px;
-    width:23%;
+    width:32%;
     height:26%;
-    border:2px solid black;
-    border-radius:100%;
-    background-color:white;
+    border-radius:5%;
+    background-color: #453162;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    font-size:large;
+}
+
+.footer-kid-2 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:15px;
+    width:32%;
+    height:26%;
+    border-radius:5%;
+    background-color: #453162;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    font-size:large;
+}
+
+.footer-kid-3 {
+    justify-content:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+}
+
+.footer-kid-1 img {
+    vertical-align:middle;
+}
+
+.footer-kid-child-1 {
+    text-align:center;
+    margin-top:15px;
+}
+
+.footer-kid-child-1 h1 {
+    margin-left:40px;
+}
+
+.footer-kid-1 div {
+    margin-right:25px;
 }
 
 h1 {
@@ -120,7 +161,7 @@ h1 {
 
 .instagram-name-1 {
     background-image: linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -129,19 +170,17 @@ h1 {
     height:50px;
 }
 
-.footer-kid-3 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:xx-large;
+#fk2-h1{
+    padding:5px 15px 5px 15px;
+    border-style:double;
+    border-color:black;
 }
 
-.footer-kid-1 img {
-    vertical-align:middle;
-}
-
-.footer-kid-1 div {
-    margin-right:25px;
-}
-
-.discord-icon-1 { 
-    
+.fk2-p {
+    padding:15px 25px 15px 25px;
+    border-style:dashed;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border-color:black;
+    width:50%;
 }
