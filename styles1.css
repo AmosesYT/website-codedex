@@ -9,24 +9,31 @@ body {
 }
 
 header {
-    border-bottom:4px solid black;
     text-align:center;
-    padding:10px;
-    
+    padding:15px;
 }
 
 .cat {
     width:150px;
     height:50px;
-    
 }
 
 .container-1{
     display: flex;
-    border-radius:35px;
+    align-items:center;
     justify-content: space-between;
     flex-direction:row;  
+    border-radius:35px;
+    border: 2px solid pink;
+    height:500px;
     
+}
+
+#pic-1, #pic-2 {
+    border-radius:50px;
+    display:inline-flex;
+    width:99%;
+    height:99%;
 }
 
 .image-link:hover {
@@ -34,18 +41,10 @@ header {
 }
 
 .image-link {
-    margin:auto;
-    margin-top:15.5%;
-    border-radius:25px;
+    border-radius:50px;
     background-color:black;
-    
-}
-
-#pic-1,#pic-2 {
-    border-radius:25px;
-    height:55px;
-    vertical-align: top;
-    
+    width:500px;
+    height:50px;
 }
 
 #about-me-pic {
@@ -66,7 +65,6 @@ header {
     height:50px;
     width:200px;
     margin:0 auto;
-    margin-top:-35px;
     
 }
 
@@ -76,6 +74,11 @@ header {
 
 .about-me a {
     display:inline-flex;
+    border-radius:25px;
+}
+
+.about-me a:hover {
+    background-color:grey;
 }
 
 footer {
@@ -173,13 +176,22 @@ h1 {
     padding:5px 15px 5px 15px;
     border-style:double;
     border-color:black;
+    margin-bottom:15px;
 }
 
 .fk2-p {
-    padding:15px 25px 15px 25px;
+    padding:10px 20px 10px 20px;
     border-style:dashed;
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     border-color:black;
     width:50%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#header-under {
+    width:inherit;
+    height:100vh;
+    border:2px solid pink;
+    border-radius:50px;
 }
