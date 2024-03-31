@@ -1,197 +1,89 @@
-
-
 body {
-    background-image: url("https://i.imgur.com/YIReSyA.png");
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:140vh;
-    
+    height:100vh;
+    background-color:#161616;
+  }
+
+.body-2 {
+    margin:auto;
+    margin-top:5em;
+    height:auto;
+    width:67%;
+    background-color:#333333;
+    border-radius:7px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 6px;
 }
 
-header {
-    text-align:center;
-    padding:15px;
+.container-1 {
+    margin:auto;
+    margin-top:5em;
+    width:91%;
+    height:6em;
+    border-radius:7px;
+    background-color:#333333;
+    box-shadow: rgb(255, 255, 255) 0px 0px 6px;
 }
 
-.cat {
-    width:150px;
-    height:50px;
+  @keyframes cursor-blink {
+    0% {
+      opacity:0;
+    }
+  }
+  
+  .header {
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      align-items:center;
+      height:40%;
+      font-family:sans-serif;
+      opacity:100%;
+  }
+  
+.header h1 {
+    font-size:3em;
 }
 
-.container-1{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    flex-direction:row;  
-    border-radius:35px;
-    border: 2px solid pink;
-    height:500px;
-    
-}
-
-#pic-1, #pic-2 {
-    border-radius:50px;
-    display:inline-flex;
-    width:99%;
-    height:99%;
-}
-
-.image-link:hover {
-    background-color:grey;
-}
-
-.image-link {
-    border-radius:50px;
-    background-color:black;
-    width:500px;
-    height:50px;
-}
-
-#about-me-pic {
-    
-    border-radius:25px;
-    height:35px;
-    background-color:black;
-    
-}
-
-#about-me-pic:hover {
-    background-color:grey;
-    
-}
-
-.about-me{ 
-    border-radius:25px;
-    height:50px;
-    width:200px;
-    margin:0 auto;
-    
-}
-
-.about-me h2 {
-    margin-top:15px;
-}
-
-.about-me a {
-    display:inline-flex;
-    border-radius:25px;
-}
-
-.about-me a:hover {
-    background-color:grey;
-}
-
-footer {
+  .header p {
+    font-size: 1.25em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
     align-items:flex-end;
-    height:100%;
-}
-
-.footer-kid-1,.footer-kid-3 {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:15px;
-    width:32%;
-    height:26%;
-    border-radius:5%;
-    background-color: #453162;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
-    font-size:large;
-}
-
-.footer-kid-2 {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:15px;
-    width:32%;
-    height:26%;
-    border-radius:5%;
-    background-color: #453162;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
-    font-size:large;
-}
-
-.footer-kid-3 {
-    justify-content:center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:xx-large;
-}
-
-.footer-kid-1 img {
-    vertical-align:middle;
-}
-
-.footer-kid-1 div {
-    margin-right:25px;
-}
-
-h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-
-.discord-name-1 , .twitter-name-1, .instagram-name-1{
-    font-family:'Courier New', Courier, monospace;
-}
-
-.discord-name-1 {
-    color:blue;
-    height:25%;
-    width:50%;
-}
-
-.twitter-name-1 {
-    color:#1DA1F2;
-}
-
-.instagram-name-1 {
-    background-image: linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.discord-icon-1,.discord-icon-2,.discord-icon-3 {
+    gap:5px;
+  }
+  
+  .header p::after {
+    content:"";
+    width:5px;
+    height:20px;
+    background: white;
+    display:inline-block; 
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  
+  img {
     width:50px;
     height:50px;
-}
-
-#fk1-h1 {
-    margin-top:-25px;
-    padding:5px 15px 5px 15px;
-    border-style:double;
-    border-color:black;
-}
-
-#fk2-h1{
-    padding:5px 15px 5px 15px;
-    border-style:double;
-    border-color:black;
-    margin-bottom:15px;
-}
-
-.fk2-p {
-    padding:10px 20px 10px 20px;
-    border-style:dashed;
-    border-bottom-left-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
-    border-color:black;
-    width:50%;
-    font-family:'Courier New', Courier, monospace;
-}
-
-#header-under {
-    width:inherit;
-    height:100vh;
-    border:2px solid pink;
-    border-radius:50px;
-}
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
