@@ -1,5 +1,5 @@
 main {
-  height:100vh;
+  max-height:100vh;
 }
 
 body {
@@ -20,31 +20,38 @@ body {
 
 
 .container-1 {
-    display:flex;
-    justify-content:center;
-    margin:auto;
-    margin-top:5em;
-    width:91%;
-    height:inherit;
-    border-radius:7px;
-    background-color:#333333;
-    box-shadow: rgb(255, 255, 255) 0px 0px 6px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  margin:auto;
+  margin-top:10em;
+  width:69%;
+  height:inherit;
+  border-radius:7px;
+  background-color:#333333;
+  box-shadow: rgb(255, 255, 255) 0px 0px 6px;
 }
 
 .container-2 {
+  margin-top:20em;
+  position:;
+  padding:4rem;
   display:flex;
   align-self:center;
-  width:85%;
-  height:25rem;
+  width:67%;
+  height:18rem;
   border-radius:.25rem;
   background-color:white;
 }
 
 .container-2-child {
+  align-self:center;
   font-size:20px;
   display:flex;
   flex-direction:column;
-  padding:3.25rem;
+  /*padding:3.25rem;*/
+  padding-right:0;
+  
 }
 
 .container-2-child img {
@@ -61,10 +68,24 @@ body {
 
 
 .container-2-child-2 {
+  margin-top:4.5em;
+  padding-left:20px;
+  font-size:15.5px;
+  line-height:1.4;
   display:flex;
-  align-items:center;
   justify-content:center;
   flex-direction:column;
+}
+
+.container-3 {
+  margin-top:5em;
+  padding:4rem;
+  display:flex;
+  align-self:center;
+  width:67%;
+  height:18rem;
+  border-radius:.25rem;
+  background-color:white;
 }
 
   @keyframes cursor-blink {
