@@ -4,20 +4,9 @@ main {
 
 body {
     height:100vh;
-    background-color:#161616;
+    background-color:#489791;
     font-family:Lato,Helvetica,Arial,sans-serif;
 }
-
-.body-2 {
-    margin:auto;
-    margin-top:5em;
-    height:inherit;
-    width:91%;
-    background-color:#333333;
-    border-radius:7px;
-    box-shadow: rgb(255, 255, 255) 0px 0px 6px;
-}
-
 
 .container-1 {
   display:flex;
@@ -25,15 +14,13 @@ body {
   flex-direction:column;
   margin:auto;
   margin-top:5em;
-  width:69%;
+  width:80%;
   height:inherit;
   border-radius:7px;
-  background-color:#333333;
-  box-shadow: rgb(255, 255, 255) 0px 0px 6px;
 }
 
 .container-2 {
-  margin-top:20em;
+  margin-top:14em;
   position:;
   padding:4rem;
   display:flex;
@@ -70,7 +57,7 @@ body {
 .container-2-child-2 {
   margin-top:4.5em;
   padding-left:20px;
-  font-size:15.5px;
+  font-size:17.5px;
   line-height:1.4;
   display:flex;
   justify-content:center;
@@ -78,6 +65,7 @@ body {
 }
 
 .container-3 {
+  font-size:20px;
   margin-top:5em;
   padding:4rem;
   display:flex;
@@ -86,6 +74,25 @@ body {
   height:18rem;
   border-radius:.25rem;
   background-color:white;
+}
+
+.container-3-child {
+  display:flex;
+  align-items: center;
+  margin-top:5em;
+  justify-self: ;
+}
+
+.container-3 img {
+  width:100px;
+  height:100px;
+}
+
+.container-3 h2 {
+  margin-bottom:40px;
+  margin-top:0;
+  font-family:Oswald,Helvetica,Arial,sans-serif;
+  font-weight:400;
 }
 
   @keyframes cursor-blink {
@@ -108,16 +115,20 @@ body {
   
 .header h1 {
   margin-bottom:12.5px;
-  margin-top:45px;
-  font-size:63px;
+  margin-top:25px;
+  font-size:50px;
+  line-height:1.1;
+  font-weight:400;
+  color:white;
 }
 
   .header p {
-    font-size: 1.25em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex;
-    align-items:flex-end;
+    font-size:12px;
     gap:5px;
+    color:white;
+    margin: 0 0 12.5px;
   }
   
   .header p::after {
@@ -129,7 +140,7 @@ body {
     animation: cursor-blink 1.5s steps(2) infinite;
   }
   
-  img {
+  .header img {
     width:50px;
     height:50px;
   }
@@ -155,3 +166,25 @@ body {
   li a:hover {
     background-color: #111111;
   }
+
+  @media (max-width: 877px) {
+    .container-2-child img {
+      width:250px;
+      height:auto;
+    }
+    .container-2 {
+      margin-top:30%;
+    }
+    .container-2-child-2 {
+      margin-top:0;
+      font-size:13.5px;
+    }
+  }
+  @media (max-width: 667px) {
+    .container-2-child img {
+      
+    }
+  }
+
+  
+  
