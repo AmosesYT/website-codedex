@@ -1,22 +1,14 @@
-html {
-  
-}
-
-main {
-  max-height:100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     margin: 0;
     padding:0;
-    height:100vh;
     box-sizing:border-box;
     backdrop-filter: blur(8px);
     background-image:url("pexels-pixabay-268883.jpg");
     background-size: contain;
-    background-color:hsl(335, 49%, 60%);
     background-repeat:round;
-    font-family:Lato,Helvetica,Arial,sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
 
 .container-1 {
@@ -24,52 +16,19 @@ body {
   justify-content:center;
   flex-direction:column;
   margin:auto;
-  margin-top:5em;
   width:80%;
   height:inherit;
   border-radius:7px;
 }
 
 .container-2 {
-  margin-top:14em;
+  margin-top:5em;
   padding:4rem;
-  display:flex;
   align-self:center;
   width:67%;
   height:18rem;
   border-radius:.25rem;
   background-color:white;
-}
-
-.container-2-child {
-  align-self:center;
-  font-size:20px;
-  display:flex;
-  flex-direction:column;
-  /*padding:3.25rem;*/
-  padding-right:0;
-  
-}
-
-.container-2-child img {
-  height:13rem;
-}
-
-.container-2-child h2 {
-  margin-bottom:40px;
-  margin-top:0;
-  font-family:,Helvetica,Arial,sans-serif;
-  font-weight:400;
-}
-
-.container-2-child-2 {
-  margin-top:4.5em;
-  padding-left:20px;
-  font-size:17.5px;
-  line-height:1.4;
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
 }
 
 .container-3 {
@@ -78,30 +37,10 @@ body {
   padding:4rem;
   display:flex;
   align-self:center;
-  flex-direction:column;
   width:67%;
   height:18rem;
   border-radius:.25rem;
   background-color:white;
-}
-
-.container-3-child {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
-  align-items:flex-end;
-}
-
-.container-3 img {
-  width:100px;
-  height:100px;
-}
-
-.container-3 h2 {
-  margin-bottom:40px;
-  margin-top:0;
-  font-family:Oswald,Helvetica,Arial,sans-serif;
-  font-weight:400;
 }
 
   @keyframes cursor-blink {
@@ -111,17 +50,39 @@ body {
   }
   
   .header { 
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+    padding-top:5em;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    font-family:sans-serif;
     opacity:100%;
   }
   
+.image-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:.5rem;
+}
+
+#discord-icon,#twitter-icon {
+  max-width:50px;
+  height:auto;
+}
+
+#twitter-icon {
+  margin-top:7px;
+}
+
+.image-container a {
+  display:block;
+  width:100%;
+}
+
+.image-container a:hover {
+  background-color:hsla(0, 0%, 100%, 0.432);
+  border-radius:5px;
+}
+
 .header h1 {
   margin-bottom:.1px;
   margin-top:25px;
@@ -133,14 +94,17 @@ body {
   padding:10px;
   backdrop-filter: blur(10px);
   border-radius:5px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.25) -12px 0px 30px, rgba(0, 0, 0, 0.12) 12px 0px 30px;
+  box-shadow: 
+  0px -8px 15px -3px rgba(0, 0, 0, 0.15),    /* Top shadow */
+  -8px 0px 15px -3px rgba(0, 0, 0, 0.15),    /* Left shadow */
+  8px 0px 15px -3px rgba(0, 0, 0, 0.15),     /* Right shadow */
+  inset 0px -15px 15px -15px rgba(88, 88, 88, 0.308);          /* Bottom shadow blocker */
 }
 
   .header p {
     display:flex;
     gap:3px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:16px;
+    font-size:14px;
     color:white;
     background:hsla(0, 0%, 100%, 0.247);
     margin: 0 0 12.5px;
@@ -159,32 +123,7 @@ body {
     animation: cursor-blink 1.5s steps(2) infinite;
   }
   
-  .header img {
-    width:50px;
-    height:50px;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111111;
-  }
+
 
   @media (max-width: 877px) {
     .container-2-child img {
